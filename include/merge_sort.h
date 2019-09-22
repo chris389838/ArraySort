@@ -2,13 +2,13 @@
 #pragma once
 #include <iostream>
 
-// Функция сортировки нисходящим слиянием
+// Downward merge method
 void mergeSortUP(int *array, int left, int right);
 
 // to call	-->	mergeSortUP(array, 0, 1);
 
 
-// Метод восходящего слияния
+// Upward merge method
 void mergeSortDOWN(int *array, int sizeOfArray);
 
 // to call	-->	mergeSortDOWN(array, sizeOfArray);
