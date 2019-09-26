@@ -32,12 +32,12 @@ void heapSort(int *array, int sizeOfArray)
 {
 	// Form the bottom row of the pyramid
 	for (int i = (sizeOfArray / 2) - 1; i >= 0; i--)
-		siftDown(array, i, sizeOfArray - 1);
+		heapGeneration(array, i, sizeOfArray - 1);
 
 	// Sift through the pyramid the remaining elements
 	for (int i = sizeOfArray - 1; i > 0; i--)
 	{
 		swap(array[0], array[i]);
-		siftDown(array, 0, i - 1);
+		heapGeneration(array, 0, i - 1);
 	}
 }
